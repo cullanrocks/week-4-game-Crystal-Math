@@ -33,8 +33,11 @@ $(".gems").on("click", function() {
     var gemValue = ($(this).attr("data-gemvalue"));
     gemValue = parseInt(gemValue);
     $("#your-score").text(counter += gemValue);
+    // $("#audio-click").play();
+    document.getElementById("audio-click").play();
 
     if (counter === targetScore) {
+        document.getElementById("audio-win").play();
         alert("You Win!");
         wins++;
         counter = 0;
@@ -44,8 +47,10 @@ $(".gems").on("click", function() {
         // $("#target-score").text(targetScore);
         $("#your-score").text(counter);
         $("#wins").text(wins);
+        
     }
     else if (counter >= targetScore) {
+        document.getElementById("audio-lose").play();
         alert("You Lose!");
         losses++;
         counter = 0;
@@ -54,6 +59,7 @@ $(".gems").on("click", function() {
         randomValue();
         $("#your-score").text(counter);
         $("#losses").text(losses);
+
     }
 })
 
