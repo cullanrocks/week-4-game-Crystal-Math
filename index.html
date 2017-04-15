@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <title>Crystal Math</title>
+</head>
+<header>
+    <h1>Count the Crystals!</h1>
+</header>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+            </div>
+        </div>
+        <div class="row images">
+            <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+                <img src="assets/images/zorassapphire.png" class="image-responsive gems" id="gem0">
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+                <img src="assets/images/goronsruby.png" class="image-responsive gems" id="gem1">
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+                <img src="assets/images/kokirigem.png" class="image-responsive gems" id="gem2">
+            </div>
+            <div class="col-md-3 col-sm-6 col-xs-6 col-6">
+                <img src="assets/images/heartgem.png" class="image-responsive gems" id="gem3">
+            </div>
+        </div>
+        <div class="row">
+            <br>
+        </div>
+        <div class="row scoreboards">
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2>Target Crystals</h2></div>
+                    <div class="panel-body" id="target-score"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2>Your Crystals</h2></div>
+                    <div class="panel-body" id="your-score"></div>
+                </div>
+            </div>
+        </div>
+         <div class="row scoreboards">
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2>Wins</h2></div>
+                    <div class="panel-body" id="wins"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2>Losses</h2></div>
+                    <div class="panel-body" id="losses"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>
